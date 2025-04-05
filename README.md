@@ -28,7 +28,7 @@ Un elegante menú interactivo de redes sociales con efectos de hover en 3D, crea
 
 1. Clona este repositorio:
 ```bash
-git clone https://github.com/tuusuario/menu-3d-redes-sociales.git
+git clone https://github.com/gianmattus-programmer/MENU-REDES-SOCIALES-3D
 ```
 
 2. Abre el archivo `index.html` en tu navegador
