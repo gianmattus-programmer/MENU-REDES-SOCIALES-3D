@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0e0d0db7;
+}
+
+ul{
+    position: relative;
+    transform: skewY(-15deg);
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    width: 7.5em;
+    background-color: rgb(48,47,47);
+    padding: 1.3em;
+    transition: .5s;
+    text-align: center;
+    z-index: var(--i);
+}
+
+ul li:hover{
+    transform: translateX(-3em);
+    background: var(--clr);
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -2.5em;
+    width: 2.5em;
+    height: 100%;
+    background: rgb(54,54,54);
+    filter: brightness(.7);
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: .5s;
+}
+
+ul li:hover::before{
+    background: var(--clr);
+    filter: brightness(.7);
+}
+
+ul li::after{
+    content: '';
+    position: absolute;
+    left: -1.25em;
+    top: -2.5em;
+    width: 100%;
+    height: 2.50em;
+    background-color: rgb(63,63,63);
+    filter: brightness(.7);
+    transform: skewX(45deg);
+    transition: .5s;
+
+}
+
+ul li:hover::after{
+    background: var(--clr);
+    filter: brightness(.8);
+    transition: .5s;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: #aaa;
+    display: block;
+    letter-spacing: .1em;
+    transition: .5s;
+    
+}
+
+ul li:hover a{
+    color: #fff;
+}
+
+ul li span{
+    position: absolute;
+    top: 0;
+    left: -2.5em;
+    width: 2.5em;
+    height: 100%;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .4;
+    font-size: 1.10em;
+}
+
+ul li:hover span{
+    opacity: 1;
+}
+
+ul li:last-child::after{
+    box-shadow: -6em 6.50em .6em rgba(0,0,0,0.25);
+}
